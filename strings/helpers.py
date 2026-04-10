@@ -18,409 +18,393 @@
 #
 # Contact for permissions:
 # Email: badboy809075@gmail.com
-
-
 HELP_1 = """<b><u>ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs :</b></u>
 
-ᴊᴜsᴛ ᴀᴅᴅ <b>ᴄ</b> ɪɴ ᴛʜᴇ sᴛᴀʀᴛɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴜsᴇ ᴛʜᴇᴍ ғᴏʀ ᴄʜᴀɴɴᴇʟ.
+➥ ᴊᴜꜱᴛ ᴀᴅᴅ <b>ᴄ</b> ɪɴ ᴛʜᴇ ꜱᴛᴀʀᴛɪɴɢ ᴏꜰ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ᴛᴏ ᴜꜱᴇ ᴛʜᴇᴍ ꜰᴏʀ ᴄʜᴀɴɴᴇʟ.
 
-
-/pause : ᴩᴀᴜsᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ.
-
-/resume : ʀᴇsᴜᴍᴇ ᴛʜᴇ ᴩᴀᴜsᴇᴅ sᴛʀᴇᴀᴍ.
-
-/skip : sᴋɪᴩ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ ᴀɴᴅ sᴛᴀʀᴛ sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ɴᴇxᴛ ᴛʀᴀᴄᴋ ɪɴ ǫᴜᴇᴜᴇ.
-
-/end ᴏʀ /stop : ᴄʟᴇᴀʀs ᴛʜᴇ ǫᴜᴇᴜᴇ ᴀɴᴅ ᴇɴᴅ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ.
-
-/player : ɢᴇᴛ ᴀ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ᴩʟᴀʏᴇʀ ᴩᴀɴᴇʟ.
-
-/queue : sʜᴏᴡs ᴛʜᴇ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋs ʟɪsᴛ.
+➥ /pause ➻ ᴘᴀᴜꜱᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴘʟᴀʏɪɴɢ ꜱᴛʀᴇᴀᴍ
+➥ /resume ➻ ʀᴇꜱᴜᴍᴇ ᴛʜᴇ ᴘᴀᴜꜱᴇᴅ ꜱᴛʀᴇᴀᴍ
+➥ /skip ➻ ꜱᴋɪᴘ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴘʟᴀʏɪɴɢ ꜱᴛʀᴇᴀᴍ ᴀɴᴅ ꜱᴛᴀʀᴛ ꜱᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ɴᴇxᴛ ᴛʀᴀᴄᴋ ɪɴ ǫᴜᴇᴜᴇ
+➥ /end ᴏʀ /stop ➻ ᴄʟᴇᴀʀꜱ ᴛʜᴇ ǫᴜᴇᴜᴇ ᴀɴᴅ ᴇɴᴅ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴘʟᴀʏɪɴɢ ꜱᴛʀᴇᴀᴍ
+➥ /player ➻ ɢᴇᴛ ᴀɴ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ᴘʟᴀʏᴇʀ ᴘᴀɴᴇʟ
+➥ /queue ➻ ꜱʜᴏᴡꜱ ᴛʜᴇ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋꜱ ʟɪꜱᴛ
 """
 
 HELP_2 = """
-<b><u>ᴀᴜᴛʜ ᴜsᴇʀs :</b></u>
+<b><u>ᴀᴜᴛʜ ᴜꜱᴇʀꜱ :</b></u>
 
-ᴀᴜᴛʜ ᴜsᴇʀs ᴄᴀɴ ᴜsᴇ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜᴏᴜᴛ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ᴄʜᴀᴛ.
+➥ ᴀᴜᴛʜ ᴜꜱᴇʀꜱ ᴄᴀɴ ᴜꜱᴇ ᴀᴅᴍɪɴ ʀɪɢʜᴛꜱ ɪɴ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜᴏᴜᴛ ᴀᴅᴍɪɴ ʀɪɢʜᴛꜱ ɪɴ ᴛʜᴇ ᴄʜᴀᴛ
 
-/auth [ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ] : ᴀᴅᴅ ᴀ ᴜsᴇʀ ᴛᴏ ᴀᴜᴛʜ ʟɪsᴛ ᴏғ ᴛʜᴇ ʙᴏᴛ.
-/unauth [ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ] : ʀᴇᴍᴏᴠᴇ ᴀ ᴀᴜᴛʜ ᴜsᴇʀs ғʀᴏᴍ ᴛʜᴇ ᴀᴜᴛʜ ᴜsᴇʀs ʟɪsᴛ.
-/authusers : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴜᴛʜ ᴜsᴇʀs ᴏғ ᴛʜᴇ ɢʀᴏᴜᴩ.
+➥ /auth ➻ ᴀᴅᴅ ᴀ ᴜꜱᴇʀ ᴛᴏ ᴀᴜᴛʜ ʟɪꜱᴛ ᴏꜰ ᴛʜᴇ ʙᴏᴛ
+➥ /unauth ➻ ʀᴇᴍᴏᴠᴇ ᴀɴ ᴀᴜᴛʜ ᴜꜱᴇʀ ꜰʀᴏᴍ ᴛʜᴇ ᴀᴜᴛʜ ʟɪꜱᴛ
+➥ /authusers ➻ ꜱʜᴏᴡꜱ ᴛʜᴇ ʟɪꜱᴛ ᴏꜰ ᴀᴜᴛʜ ᴜꜱᴇʀꜱ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ
 """
 
 HELP_3 = """
-<u><b>ʙʀᴏᴀᴅᴄᴀsᴛ ғᴇᴀᴛᴜʀᴇ</b></u> [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs] :
-/broadcast [ᴍᴇssᴀɢᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ] : ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
+<u><b>ʙʀᴏᴀᴅᴄᴀꜱᴛ ꜰᴇᴀᴛᴜʀᴇ</b></u> [ᴏɴʟʏ ꜰᴏʀ ꜱᴜᴅᴏᴇʀꜱ]
 
-<u>ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ᴍᴏᴅᴇs :</u>
-<b>-pin</b> : ᴩɪɴs ʏᴏᴜʀ ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴍᴇssᴀɢᴇs ɪɴ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs.
-<b>-pinloud</b> : ᴩɪɴs ʏᴏᴜʀ ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴍᴇssᴀɢᴇ ɪɴ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs ᴀɴᴅ sᴇɴᴅ ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴ ᴛᴏ ᴛʜᴇ ᴍᴇᴍʙᴇʀs.
-<b>-user</b> : ʙʀᴏᴀᴅᴄᴀsᴛs ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴛᴏ ᴛʜᴇ ᴜsᴇʀs ᴡʜᴏ ʜᴀᴠᴇ sᴛᴀʀᴛᴇᴅ ʏᴏᴜʀ ʙᴏᴛ.
-<b>-assistant</b> : ʙʀᴏᴀᴅᴄᴀsᴛ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ғʀᴏᴍ ᴛʜᴇ ᴀssɪᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ ᴏғ ᴛʜᴇ ʙᴏᴛ.
-<b>-nobot</b> : ғᴏʀᴄᴇs ᴛʜᴇ ʙᴏᴛ ᴛᴏ ɴᴏᴛ ʙʀᴏᴀᴅᴄᴀsᴛ ᴛʜᴇ ᴍᴇssᴀɢᴇ.
-<b>-forward</b> : ғᴏʀᴡᴀʀᴅs ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ ᴏʀɪɢɪɴᴀʟ ᴄʜᴀɴɴᴇʟ/ᴜsᴇʀ ᴀᴛᴛʀɪʙᴜᴛɪᴏɴ.
-<b>-wfchat</b> : sᴘᴇᴄɪᴀʟ ʙʀᴏᴀᴅᴄᴀsᴛ ᴍᴏᴅᴇ ғᴏʀ ᴄʜᴀᴛs (ᴡᴏʀᴋs ᴡɪᴛʜ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇs).
-<b>-wfuser</b> : sᴘᴇᴄɪᴀʟ ʙʀᴏᴀᴅᴄᴀsᴛ ᴍᴏᴅᴇ ғᴏʀ ᴜsᴇʀs (ᴡᴏʀᴋs ᴡɪᴛʜ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇs).
+➥ /broadcast ➻ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ꜱᴇʀᴠᴇᴅ ᴄʜᴀᴛꜱ ᴏꜰ ᴛʜᴇ ʙᴏᴛ
 
-<b>ɴᴏᴛᴇ:</b> -wfchat and -wfuser modes require replying to a message.
+<u>ʙʀᴏᴀᴅᴄᴀꜱᴛɪɴɢ ᴍᴏᴅᴇꜱ :</u>
+
+➥ -pin ➻ ᴘɪɴꜱ ʏᴏᴜʀ ʙʀᴏᴀᴅᴄᴀꜱᴛᴇᴅ ᴍᴇꜱꜱᴀɢᴇꜱ
+➥ -pinloud ➻ ᴘɪɴ ᴡɪᴛʜ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ ᴛᴏ ᴍᴇᴍʙᴇʀꜱ
+➥ -user ➻ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴛᴏ ᴀʟʟ ᴜꜱᴇʀꜱ
+➥ -assistant ➻ ʙʀᴏᴀᴅᴄᴀꜱᴛ ꜰʀᴏᴍ ᴀꜱꜱɪꜱᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ
+➥ -nobot ➻ ꜱᴛᴏᴘ ʙᴏᴛ ꜰʀᴏᴍ ʙʀᴏᴀᴅᴄᴀꜱᴛɪɴɢ
+➥ -forward ➻ ꜰᴏʀᴡᴀʀᴅ ᴡɪᴛʜ ᴏʀɪɢɪɴᴀʟ ᴀᴛᴛʀɪʙᴜᴛɪᴏɴ
+➥ -wfchat ➻ ꜱᴘᴇᴄɪᴀʟ ᴄʜᴀᴛ ʙʀᴏᴀᴅᴄᴀꜱᴛ
+➥ -wfuser ➻ ꜱᴘᴇᴄɪᴀʟ ᴜꜱᴇʀ ʙʀᴏᴀᴅᴄᴀꜱᴛ
+
+➥ ɴᴏᴛᴇ ➻ ᴡꜰ ᴍᴏᴅᴇꜱ ʀᴇǫᴜɪʀᴇ ʀᴇᴘʟʏ
 """
 
-HELP_4 = """<u><b>ᴄʜᴀᴛ ʙʟᴀᴄᴋʟɪsᴛ ғᴇᴀᴛᴜʀᴇ :</b></u> [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs]
+HELP_4 = """<u><b>ᴄʜᴀᴛ ʙʟᴀᴄᴋʟɪꜱᴛ ꜰᴇᴀᴛᴜʀᴇ :</b></u> [ᴏɴʟʏ ꜰᴏʀ ꜱᴜᴅᴏᴇʀꜱ]
 
-ʀᴇsᴛʀɪᴄᴛ sʜɪᴛ ᴄʜᴀᴛs ᴛᴏ ᴜsᴇ ᴏᴜʀ ᴘʀᴇᴄɪᴏᴜs ʙᴏᴛ.
+➥ ʀᴇꜱᴛʀɪᴄᴛ ᴄʜᴀᴛꜱ ꜰʀᴏᴍ ᴜꜱɪɴɢ ʙᴏᴛ
 
-/blacklistchat [ᴄʜᴀᴛ ɪᴅ] : ʙʟᴀᴄᴋʟɪsᴛ ᴀ ᴄʜᴀᴛ ғʀᴏᴍ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ.
-/whitelistchat [ᴄʜᴀᴛ ɪᴅ] : ᴡʜɪᴛᴇʟɪsᴛ ᴛʜᴇ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛ.
-/blacklistedchat : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛs.
+➥ /blacklistchat ➻ ʙʟᴀᴄᴋʟɪꜱᴛ ᴀ ᴄʜᴀᴛ
+➥ /whitelistchat ➻ ʀᴇᴍᴏᴠᴇ ᴄʜᴀᴛ ꜰʀᴏᴍ ʙʟᴀᴄᴋʟɪꜱᴛ
+➥ /blacklistedchat ➻ ꜱʜᴏᴡ ʙʟᴀᴄᴋʟɪꜱᴛᴇᴅ ᴄʜᴀᴛꜱ
 """
 
 HELP_5 = """
-<u><b>ʙʟᴏᴄᴋ ᴜsᴇʀs:</b></u> [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs]
+<u><b>ʙʟᴏᴄᴋ ᴜꜱᴇʀꜱ :</b></u> [ᴏɴʟʏ ꜰᴏʀ ꜱᴜᴅᴏᴇʀꜱ]
 
-sᴛᴀʀᴛs ɪɢɴᴏʀɪɴɢ ᴛʜᴇ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴜsᴇʀ, sᴏ ᴛʜᴀᴛ ʜᴇ ᴄᴀɴ'ᴛ ᴜsᴇ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs.
+➥ ʙʟᴏᴄᴋᴇᴅ ᴜꜱᴇʀ ᴄᴀɴ'ᴛ ᴜꜱᴇ ʙᴏᴛ
 
-/block [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴜsᴇʀ] : ʙʟᴏᴄᴋ ᴛʜᴇ ᴜsᴇʀ ғʀᴏᴍ ᴏᴜʀ ʙᴏᴛ.
-/unblock [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴜsᴇʀ] : ᴜɴʙʟᴏᴄᴋs ᴛʜᴇ ʙʟᴏᴄᴋᴇᴅ ᴜsᴇʀ.
-/blockedusers : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ʙʟᴏᴄᴋᴇᴅ ᴜsᴇʀs.
+➥ /block ➻ ʙʟᴏᴄᴋ ᴀ ᴜꜱᴇʀ
+➥ /unblock ➻ ᴜɴʙʟᴏᴄᴋ ᴀ ᴜꜱᴇʀ
+➥ /blockedusers ➻ ꜱʜᴏᴡ ʙʟᴏᴄᴋᴇᴅ ᴜꜱᴇʀꜱ
 """
-
 HELP_6 = """
-<u><b>ᴄʜᴀɴɴᴇʟ ᴩʟᴀʏ ᴄᴏᴍᴍᴀɴᴅs:</b></u>
+<u><b>ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ ᴄᴏᴍᴍᴀɴᴅꜱ:</b></u>
 
-ʏᴏᴜ ᴄᴀɴ sᴛʀᴇᴀᴍ ᴀᴜᴅɪᴏ/ᴠɪᴅᴇᴏ ɪɴ ᴄʜᴀɴɴᴇʟ.
+➥ ʏᴏᴜ ᴄᴀɴ ꜱᴛʀᴇᴀᴍ ᴀᴜᴅɪᴏ/ᴠɪᴅᴇᴏ ɪɴ ᴄʜᴀɴɴᴇʟ
 
-/cplay : sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴀᴜᴅɪᴏ ᴛʀᴀᴄᴋ ᴏɴ ᴄʜᴀɴɴᴇʟ's ᴠɪᴅᴇᴏᴄʜᴀᴛ.
-/cvplay : sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴠɪᴅᴇᴏ ᴛʀᴀᴄᴋ ᴏɴ ᴄʜᴀɴɴᴇʟ's ᴠɪᴅᴇᴏᴄʜᴀᴛ.
-/cplayforce or /cvplayforce : sᴛᴏᴩs ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ ᴀɴᴅ sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴛʀᴀᴄᴋ.
-
-/channelplay [ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ] ᴏʀ [ᴅɪsᴀʙʟᴇ] : ᴄᴏɴɴᴇᴄᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴀ ɢʀᴏᴜᴩ ᴀɴᴅ sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʀᴀᴄᴋs ʙʏ ᴛʜᴇ ʜᴇʟᴩ ᴏғ ᴄᴏᴍᴍᴀɴᴅs sᴇɴᴛ ɪɴ ɢʀᴏᴜᴩ.
+➥ /cplay ➻ ꜱᴛᴀʀᴛꜱ ꜱᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇꜱᴛᴇᴅ ᴀᴜᴅɪᴏ ᴛʀᴀᴄᴋ ᴏɴ ᴄʜᴀɴɴᴇʟ ᴠɪᴅᴇᴏᴄʜᴀᴛ
+➥ /cvplay ➻ ꜱᴛᴀʀᴛꜱ ꜱᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇꜱᴛᴇᴅ ᴠɪᴅᴇᴏ ᴛʀᴀᴄᴋ ᴏɴ ᴄʜᴀɴɴᴇʟ ᴠɪᴅᴇᴏᴄʜᴀᴛ
+➥ /cplayforce ᴏʀ /cvplayforce ➻ ꜱᴛᴏᴘꜱ ᴛʜᴇ ᴏɴɢᴏɪɴɢ ꜱᴛʀᴇᴀᴍ ᴀɴᴅ ꜱᴛᴀʀᴛꜱ ꜱᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇꜱᴛᴇᴅ ᴛʀᴀᴄᴋ
+➥ /channelplay ➻ ᴄᴏɴɴᴇᴄᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴛᴀʀᴛ ꜱᴛʀᴇᴀᴍɪɴɢ ᴠɪᴀ ᴄᴏᴍᴍᴀɴᴅꜱ
 """
 
 HELP_7 = """
-<u><b>ɢʟᴏʙᴀʟ ʙᴀɴ ғᴇᴀᴛᴜʀᴇ</b></u> [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs] :
+<u><b>ɢʟᴏʙᴀʟ ʙᴀɴ ꜰᴇᴀᴛᴜʀᴇ</b></u> [ᴏɴʟʏ ꜰᴏʀ ꜱᴜᴅᴏᴇʀꜱ]
 
-/gban [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴜsᴇʀ] : ɢʟᴏʙᴀʟʟʏ ʙᴀɴs ᴛʜᴇ ᴄʜᴜᴛɪʏᴀ ғʀᴏᴍ ᴀʟʟ ᴛʜᴇ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs ᴀɴᴅ ʙʟᴀᴄᴋʟɪsᴛ ʜɪᴍ ғʀᴏᴍ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ.
-/ungban [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴜsᴇʀ] : ɢʟᴏʙᴀʟʟʏ ᴜɴʙᴀɴs ᴛʜᴇ ɢʟᴏʙᴀʟʟʏ ʙᴀɴɴᴇᴅ ᴜsᴇʀ.
-/gbannedusers : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ɢʟᴏʙᴀʟʟʏ ʙᴀɴɴᴇᴅ ᴜsᴇʀs.
+➥ /gban ➻ ɢʟᴏʙᴀʟʟʏ ʙᴀɴ ᴀ ᴜꜱᴇʀ ꜰʀᴏᴍ ᴀʟʟ ꜱᴇʀᴠᴇᴅ ᴄʜᴀᴛꜱ
+➥ /ungban ➻ ᴜɴʙᴀɴ ᴀ ɢʟᴏʙᴀʟʟʏ ʙᴀɴɴᴇᴅ ᴜꜱᴇʀ
+➥ /gbannedusers ➻ ꜱʜᴏᴡ ʟɪꜱᴛ ᴏꜰ ɢʟᴏʙᴀʟ ʙᴀɴɴᴇᴅ ᴜꜱᴇʀꜱ
 """
 
 HELP_8 = """
-<b><u>ʟᴏᴏᴘ sᴛʀᴇᴀᴍ :</b></u>
+<b><u>ʟᴏᴏᴘ ꜱᴛʀᴇᴀᴍ :</b></u>
 
-<b>sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ ɪɴ ʟᴏᴏᴘ</b>
+➥ ꜱᴛᴀʀᴛꜱ ꜱᴛʀᴇᴀᴍɪɴɢ ᴄᴜʀʀᴇɴᴛ ꜱᴛʀᴇᴀᴍ ɪɴ ʟᴏᴏᴘ
 
-/loop [enable/disable] : ᴇɴᴀʙʟᴇs/ᴅɪsᴀʙʟᴇs ʟᴏᴏᴘ ғᴏʀ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ
-/loop [1, 2, 3, ...] : ᴇɴᴀʙʟᴇs ᴛʜᴇ ʟᴏᴏᴘ ғᴏʀ ᴛʜᴇ ɢɪᴠᴇɴ ᴠᴀʟᴜᴇ.
+➥ /loop [enable/disable] ➻ ᴇɴᴀʙʟᴇ ᴏʀ ᴅɪꜱᴀʙʟᴇ ʟᴏᴏᴘ
+➥ /loop [1,2,3...] ➻ ꜱᴇᴛ ʟᴏᴏᴘ ᴄᴏᴜɴᴛ
 """
 
 HELP_9 = """
-<u><b>ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ᴍᴏᴅᴇ</b></u> [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs] :
+<u><b>ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ᴍᴏᴅᴇ</b></u> [ᴏɴʟʏ ꜰᴏʀ ꜱᴜᴅᴏᴇʀꜱ]
 
-/logs : ɢᴇᴛ ʟᴏɢs ᴏғ ᴛʜᴇ ʙᴏᴛ.
-
-/logger [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] : ʙᴏᴛ ᴡɪʟʟ sᴛᴀʀᴛ ʟᴏɢɢɪɴɢ ᴛʜᴇ ᴀᴄᴛɪᴠɪᴛɪᴇs ʜᴀᴩᴩᴇɴ ᴏɴ ʙᴏᴛ.
-
-/maintenance [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] : ᴇɴᴀʙʟᴇ ᴏʀ ᴅɪsᴀʙʟᴇ ᴛʜᴇ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ᴍᴏᴅᴇ ᴏғ ʏᴏᴜʀ ʙᴏᴛ.
+➥ /logs ➻ ɢᴇᴛ ʙᴏᴛ ʟᴏɢꜱ
+➥ /logger ➻ ᴇɴᴀʙʟᴇ ᴏʀ ᴅɪꜱᴀʙʟᴇ ʟᴏɢɢɪɴɢ
+➥ /maintenance ➻ ᴛᴏɢɢʟᴇ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ᴍᴏᴅᴇ
 """
 
 HELP_10 = """
-<b><u>ᴘɪɴɢ & sᴛᴀᴛs :</b></u>
+<b><u>ᴘɪɴɢ & ꜱᴛᴀᴛꜱ :</b></u>
 
-/start : sᴛᴀʀᴛs ᴛʜᴇ ᴍᴜsɪᴄ ʙᴏᴛ.
-/help : ɢᴇᴛ ʜᴇʟᴩ ᴍᴇɴᴜ ᴡɪᴛʜ ᴇxᴩʟᴀɴᴀᴛɪᴏɴ ᴏғ ᴄᴏᴍᴍᴀɴᴅs.
-
-/ping : sʜᴏᴡs ᴛʜᴇ ᴩɪɴɢ ᴀɴᴅ sʏsᴛᴇᴍ sᴛᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
-
-/stats : sʜᴏᴡs ᴛʜᴇ ᴏᴠᴇʀᴀʟʟ sᴛᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
+➥ /start ➻ ꜱᴛᴀʀᴛ ᴛʜᴇ ᴍᴜꜱɪᴄ ʙᴏᴛ
+➥ /help ➻ ᴏᴘᴇɴ ʜᴇʟᴘ ᴍᴇɴᴜ
+➥ /ping ➻ ꜱʜᴏᴡ ᴘɪɴɢ ᴀɴᴅ ꜱʏꜱᴛᴇᴍ ꜱᴛᴀᴛꜱ
+➥ /stats ➻ ꜱʜᴏᴡ ᴏᴠᴇʀᴀʟʟ ʙᴏᴛ ꜱᴛᴀᴛꜱ
 """
 
 HELP_11 = """
-<u><b>ᴩʟᴀʏ ᴄᴏᴍᴍᴀɴᴅs :</b></u>
+<u><b>ᴘʟᴀʏ ᴄᴏᴍᴍᴀɴᴅꜱ :</b></u>
 
-<b>v :</b> sᴛᴀɴᴅs ғᴏʀ ᴠɪᴅᴇᴏ ᴩʟᴀʏ.
-<b>force :</b> sᴛᴀɴᴅs ғᴏʀ ғᴏʀᴄᴇ ᴩʟᴀʏ.
+➥ v ➻ ꜱᴛᴀɴᴅꜱ ꜰᴏʀ ᴠɪᴅᴇᴏ ᴘʟᴀʏ
+➥ force ➻ ꜰᴏʀᴄᴇ ᴘʟᴀʏ
 
-/play ᴏʀ /vplay : sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴛʀᴀᴄᴋ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ.
-
-/playforce ᴏʀ /vplayforce : sᴛᴏᴩs ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ ᴀɴᴅ sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴛʀᴀᴄᴋ.
+➥ /play ᴏʀ /vplay ➻ ꜱᴛᴀʀᴛ ꜱᴛʀᴇᴀᴍɪɴɢ ᴛʀᴀᴄᴋ
+➥ /playforce ᴏʀ /vplayforce ➻ ꜱᴛᴏᴘ ᴄᴜʀʀᴇɴᴛ ᴀɴᴅ ꜱᴛᴀʀᴛ ɴᴇᴡ ꜱᴛʀᴇᴀᴍ
 """
 
 HELP_12 = """
-<b><u>sʜᴜғғʟᴇ ᴏ̨ᴜᴇᴜᴇ :</b></u>
+<b><u>ꜱʜᴜꜰꜰʟᴇ ǫᴜᴇᴜᴇ :</b></u>
 
-/shuffle : sʜᴜғғʟᴇ's ᴛʜᴇ ᴏ̨ᴜᴇᴜᴇ.
-/queue : sʜᴏᴡs ᴛʜᴇ sʜᴜғғʟᴇᴅ ᴏ̨ᴜᴇᴜᴇ.
+➥ /shuffle ➻ ꜱʜᴜꜰꜰʟᴇ ᴛʜᴇ ǫᴜᴇᴜᴇ
+➥ /queue ➻ ꜱʜᴏᴡ ꜱʜᴜꜰꜰʟᴇᴅ ǫᴜᴇᴜᴇ
 """
 
 HELP_13 = """
-<b><u>sᴇᴇᴋ sᴛʀᴇᴀᴍ :</b></u>
+<b><u>ꜱᴇᴇᴋ ꜱᴛʀᴇᴀᴍ :</b></u>
 
-/seek [ᴅᴜʀᴀᴛɪᴏɴ ɪɴ sᴇᴄᴏɴᴅs] : sᴇᴇᴋ ᴛʜᴇ sᴛʀᴇᴀᴍ ᴛᴏ ᴛʜᴇ ɢɪᴠᴇɴ ᴅᴜʀᴀᴛɪᴏɴ.
-/seekback [ᴅᴜʀᴀᴛɪᴏɴ ɪɴ sᴇᴄᴏɴᴅs] : ʙᴀᴄᴋᴡᴀʀᴅ sᴇᴇᴋ ᴛʜᴇ sᴛʀᴇᴀᴍ ᴛᴏ ᴛʜᴇ ᴛʜᴇ ɢɪᴠᴇɴ ᴅᴜʀᴀᴛɪᴏɴ.
+➥ /seek ➻ ꜱᴇᴇᴋ ᴛᴏ ɢɪᴠᴇɴ ᴛɪᴍᴇ
+➥ /seekback ➻ ʙᴀᴄᴋᴡᴀʀᴅ ꜱᴇᴇᴋ
 """
 
 HELP_14 = """
-<b><u>sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ</b></u>
+<b><u>ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ :</b></u>
 
-/song [sᴏɴɢ ɴᴀᴍᴇ/ʏᴛ ᴜʀʟ] : ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ᴛʀᴀᴄᴋ ғʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ ɪɴ ᴍᴘ3 ᴏʀ ᴍᴘ4 ғᴏʀᴍᴀᴛs.
+➥ /song ➻ ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢ ɪɴ ᴍᴘ3 ᴏʀ ᴍᴘ4
 """
 
 HELP_15 = """
-<b><u>sᴘᴇᴇᴅ ᴄᴏᴍᴍᴀɴᴅs :</b></u>
+<b><u>ꜱᴘᴇᴇᴅ ᴄᴏᴍᴍᴀɴᴅꜱ :</b></u>
 
-ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛʀᴏʟ ᴛʜᴇ ᴘʟᴀʏʙᴀᴄᴋ sᴘᴇᴇᴅ ᴏғ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ. [ᴀᴅᴍɪɴs ᴏɴʟʏ]
+➥ ᴄᴏɴᴛʀᴏʟ ᴘʟᴀʏʙᴀᴄᴋ ꜱᴘᴇᴇᴅ [ᴀᴅᴍɪɴꜱ ᴏɴʟʏ]
 
-/speed or /playback : ғᴏʀ ᴀᴅᴊᴜsᴛɪɴɢ ᴛʜᴇ ᴀᴜᴅɪᴏ ᴘʟᴀʏʙᴀᴄᴋ sᴘᴇᴇᴅ ɪɴ ɢʀᴏᴜᴘ.
-/cspeed or /cplayback : ғᴏʀ ᴀᴅᴊᴜsᴛɪɴɢ ᴛʜᴇ ᴀᴜᴅɪᴏ ᴘʟᴀʏʙᴀᴄᴋ sᴘᴇᴇᴅ ɪɴ ᴄʜᴀɴɴᴇʟ.
+➥ /speed ᴏʀ /playback ➻ ᴀᴅᴊᴜꜱᴛ ꜱᴘᴇᴇᴅ ɪɴ ɢʀᴏᴜᴘ
+➥ /cspeed ᴏʀ /cplayback ➻ ᴀᴅᴊᴜꜱᴛ ꜱᴘᴇᴇᴅ ɪɴ ᴄʜᴀɴɴᴇʟ
 """
 
 HELP_16 = """
-<b><u>ᴘʀɪᴠᴀᴄʏ ᴘᴏʟɪᴄʏ:</b></u>
+<b><u>ᴘʀɪᴠᴀᴄʏ ᴘᴏʟɪᴄʏ :</b></u>
 
-/Privacy : Display the privacy statement for Sarcastic Bot 
+➥ /Privacy ➻ ᴅɪꜱᴘʟᴀʏ ᴘʀɪᴠᴀᴄʏ ꜱᴛᴀᴛᴇᴍᴇɴᴛ
 """
 
 HELP_17 = """
-<b><u>ɢᴀᴍᴇs</b></u>
+<b><u>ɢᴀᴍᴇꜱ</b></u>
 
-/dice : Rᴏʟʟs ᴀ ᴅɪᴄᴇ.
-/ludo : Pʟᴀʏ Lᴜᴅᴏ.
-/dart : Tʜʀᴏᴡs ᴀ ᴅᴀʀᴛ.
-/basket ᴏʀ /basketball : Pʟᴀʏs ʙᴀsᴋᴇᴛʙᴀʟʟ.
-/football : Pʟᴀʏs ғᴏᴏᴛʙᴀʟʟ.
-/slot ᴏʀ /jackpot : Pʟᴀʏs ᴊᴀᴄᴋᴘᴏᴛ.
-/bowling : Pʟᴀʏs ʙᴏᴡʟɪɴɢ.
+➥ /dice ➻ ʀᴏʟʟ ᴀ ᴅɪᴄᴇ
+➥ /ludo ➻ ᴘʟᴀʏ ʟᴜᴅᴏ
+➥ /dart ➻ ᴛʜʀᴏᴡ ᴀ ᴅᴀʀᴛ
+➥ /basket ᴏʀ /basketball ➻ ᴘʟᴀʏ ʙᴀꜱᴋᴇᴛʙᴀʟʟ
+➥ /football ➻ ᴘʟᴀʏ ꜰᴏᴏᴛʙᴀʟʟ
+➥ /slot ᴏʀ /jackpot ➻ ᴘʟᴀʏ ᴊᴀᴄᴋᴘᴏᴛ
+➥ /bowling ➻ ᴘʟᴀʏ ʙᴏᴡʟɪɴɢ
 """
 
 HELP_18 = """
 <b><u>ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs</b></u>
-/ban - Ban A User
-/banall - Ban All Users
-/sban - Delete all messages of user that sended in group and ban the user
-/tban - Ban A User For Specific Time
-/unban - Unban A User
-/warn - Warn A User
-/swarn - Delete all the message sended in group and warn the user
-/rmwarns - Remove All Warning of A User
-/warns - Show Warning Of A User
-/kick - Kick A User
-/skick - Delete the replied message kicking its sender
-/purge - Purge Messages
-/purge [n] - Purge "n" number of messages from replied message
-/del - Delete Replied Message
-/promote - Promote A Member
-/fullpromote - Promote A Member With All Rights
-/demote - Demote A Member
-/pin - Pin A Message
-/unpin - unpin a message
-/unpinall - unpinall messages
-/mute - Mute A User
-/tmute - Mute A User For Specific Time
-/unmute - Unmute A User
-/zombies - Ban Deleted Accounts
-/report | @admins | @admin - Report A Message To Admins.
+
+➥ /ban ➻ ʙᴀɴ ᴀ ᴜꜱᴇʀ
+➥ /banall ➻ ʙᴀɴ ᴀʟʟ ᴜꜱᴇʀꜱ
+➥ /sban ➻ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴍᴇꜱꜱᴀɢᴇꜱ ᴏꜰ ᴜꜱᴇʀ ᴛʜᴀᴛ ꜱᴇɴᴅᴇᴅ ɪɴ ɢʀᴏᴜᴘ ᴀɴᴅ ʙᴀɴ ᴛʜᴇ ᴜꜱᴇʀ
+➥ /tban ➻ ʙᴀɴ ᴀ ᴜꜱᴇʀ ꜰᴏʀ ꜱᴘᴇᴄɪꜰɪᴄ ᴛɪᴍᴇ
+➥ /unban ➻ ᴜɴʙᴀɴ ᴀ ᴜꜱᴇʀ
+➥ /warn ➻ ᴡᴀʀɴ ᴀ ᴜꜱᴇʀ
+➥ /swarn ➻ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ ꜱᴇɴᴅᴇᴅ ɪɴ ɢʀᴏᴜᴘ ᴀɴᴅ ᴡᴀʀɴ ᴛʜᴇ ᴜꜱᴇʀ
+➥ /rmwarns ➻ ʀᴇᴍᴏᴠᴇ ᴀʟʟ ᴡᴀʀɴɪɴɢ ᴏꜰ ᴀ ᴜꜱᴇʀ
+➥ /warns ➻ ꜱʜᴏᴡ ᴡᴀʀɴɪɴɢ ᴏꜰ ᴀ ᴜꜱᴇʀ
+➥ /kick ➻ ᴋɪᴄᴋ ᴀ ᴜꜱᴇʀ
+➥ /skick ➻ ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ʀᴇᴘʟɪᴇᴅ ᴍᴇꜱꜱᴀɢᴇ ᴋɪᴄᴋɪɴɢ ɪᴛꜱ ꜱᴇɴᴅᴇʀ
+➥ /purge ➻ ᴘᴜʀɢᴇ ᴍᴇꜱꜱᴀɢᴇꜱ
+➥ /purge [n] ➻ ᴘᴜʀɢᴇ "ɴ" ɴᴜᴍʙᴇʀ ᴏꜰ ᴍᴇꜱꜱᴀɢᴇꜱ ꜰʀᴏᴍ ʀᴇᴘʟɪᴇᴅ ᴍᴇꜱꜱᴀɢᴇ
+➥ /del ➻ ᴅᴇʟᴇᴛᴇ ʀᴇᴘʟɪᴇᴅ ᴍᴇꜱꜱᴀɢᴇ
+➥ /promote ➻ ᴘʀᴏᴍᴏᴛᴇ ᴀ ᴍᴇᴍʙᴇʀ
+➥ /fullpromote ➻ ᴘʀᴏᴍᴏᴛᴇ ᴀ ᴍᴇᴍʙᴇʀ ᴡɪᴛʜ ᴀʟʟ ʀɪɢʜᴛꜱ
+➥ /demote ➻ ᴅᴇᴍᴏᴛᴇ ᴀ ᴍᴇᴍʙᴇʀ
+➥ /pin ➻ ᴘɪɴ ᴀ ᴍᴇꜱꜱᴀɢᴇ
+➥ /unpin ➻ ᴜɴᴘɪɴ ᴀ ᴍᴇꜱꜱᴀɢᴇ
+➥ /unpinall ➻ ᴜɴᴘɪɴ ᴀʟʟ ᴍᴇꜱꜱᴀɢᴇꜱ
+➥ /mute ➻ ᴍᴜᴛᴇ ᴀ ᴜꜱᴇʀ
+➥ /tmute ➻ ᴍᴜᴛᴇ ᴀ ᴜꜱᴇʀ ꜰᴏʀ ꜱᴘᴇᴄɪꜰɪᴄ ᴛɪᴍᴇ
+➥ /unmute ➻ ᴜɴᴍᴜᴛᴇ ᴀ ᴜꜱᴇʀ
+➥ /zombies ➻ ʙᴀɴ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛꜱ
+➥ /report | @admins | @admin ➻ ʀᴇᴘᴏʀᴛ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴀᴅᴍɪɴꜱ
 """
 
 HELP_19 = """
-<b><u>ɪᴍᴀɢᴇ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ:</b></u>
+<b><u>ɪᴍᴀɢᴇ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ :</b></u>
 
-/tgm : ʀᴇᴘʟʏ ᴛᴏ ᴀɴ ᴀɴʏ ɪᴍᴀɢᴇ,ᴠɪᴅᴇᴏ ᴏʀ ɢɪғ
+➥ /tgm ➻ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ɪᴍᴀɢᴇ, ᴠɪᴅᴇᴏ ᴏʀ ɢɪꜰ
 """
 
 HELP_20 = """
-<b><u>ᴛᴀɢ ᴄᴏᴍᴍᴀɴᴅs:</b></u>
+<b><u>ᴛᴀɢ ᴄᴏᴍᴍᴀɴᴅꜱ :</b></u>
 
-/tagall [ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ᴏʀ ʀᴇᴘʟʏ ᴏɴ ᴀɴʏ ᴄʜᴀᴛ] : ᴛᴀɢ ᴀʟʟ ᴜsᴇʀs.
-/admins [ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ᴏʀ ʀᴇᴘʟʏ ᴏɴ ᴀɴʏ ᴄʜᴀᴛ] : ᴛᴀɢ ᴀʟʟ ᴀᴅᴍɪɴs.
+➥ /tagall ➻ ᴛᴀɢ ᴀʟʟ ᴜꜱᴇʀꜱ
+➥ /admins ➻ ᴛᴀɢ ᴀʟʟ ᴀᴅᴍɪɴꜱ
 """
 
 HELP_21 = """
-<b><u>ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏs:</b></u>
+<b><u>ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏꜱ :</b></u>
 
-/vid : ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ɪɴsᴛᴀ ᴛᴡɪᴛᴛᴇʀ ᴀɴᴅ ᴍᴏʀᴇ ᴘʟᴀᴛғᴏʀᴍs ᴠɪᴅᴇᴏ.
+➥ /vid ➻ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏꜱ ꜰʀᴏᴍ ɪɴꜱᴛᴀ, ᴛᴡɪᴛᴛᴇʀ ᴀɴᴅ ᴍᴏʀᴇ
 """
 
-# Copyright (c) 2025 Nand Yaduwanshi <NoxxOP>
+HELP_22 = """
+<b><u>ᴛᴇxᴛ ᴛᴏ ꜱᴘᴇᴇᴄʜ :</b></u>
 
-# 🎯 TEXT TO SPEECH COMMANDS
-HELP_22 = """ 🔊 <b>TEXT TO SPEECH</b> 🎤
+➥ /tts ➻ ᴄᴏɴᴠᴇʀᴛ ᴛᴇxᴛ ᴛᴏ ʜɪɴᴅɪ ꜱᴘᴇᴇᴄʜ
 
-• /tts &lt;text&gt;: Converts the given text to speech in Hindi 🇮🇳
-<b>Example:</b>
-• /tts Radhe Radhe 🙏
+➥ ᴇxᴀᴍᴘʟᴇ ➻ /tts ʀᴀᴅʜᴇ ʀᴀᴅʜᴇ 🙏  
+➥ ɴᴏᴛᴇ ➻ ᴛᴇxᴛ ᴅᴇɴᴀ ᴢᴀʀᴜʀɪ ʜᴀɪ
+"""
 
-<b>Note:</b> Make sure to provide some text after the /tts command ✨ """
+HELP_23 = """
+<b><u>ɪɴᴠɪᴛᴇ ʟɪɴᴋ ᴄᴏᴍᴍᴀɴᴅꜱ :</b></u>
 
-# 🔗 INVITE LINK COMMANDS  
-HELP_23 = """ 🔗 <b>INVITE LINK COMMANDS</b> 💫
+➥ /givelink ➻ ɢᴇᴛ ᴄᴜʀʀᴇɴᴛ ᴄʜᴀᴛ ʟɪɴᴋ
+➥ /link ➻ ɢᴇᴛ ɢʀᴏᴜᴘ ɪɴꜰᴏ ᴀɴᴅ ɪɴᴠɪᴛᴇ ʟɪɴᴋ
+"""
 
-• /givelink: Get the invite link for the current chat 📱
-• /link group_id: Get information and generate an invite link for the specified group ID 🆔 """
+HELP_24 = """
+<b><u>ꜰᴏʀᴄᴇ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ :</b></u>
 
-# 🔒 FORCE SUBSCRIPTION COMMANDS
-HELP_24 = """ 🔒 <b>FORCE SUBSCRIPTION COMMANDS</b> 🎯
+➥ /fsub ➻ ꜱᴇᴛ ꜰᴏʀᴄᴇ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ
+➥ /fsub off ➻ ᴅɪꜱᴀʙʟᴇ ꜰᴏʀᴄᴇ ꜱᴜʙ
+"""
 
-• /fsub &lt;channel username or id&gt; - Set force subscription for this group 📢
-• /fsub off - Disable force subscription for this group ❌ """
+HELP_25 = """
+<b><u>ᴢᴏᴍʙɪᴇ ᴀᴄᴄᴏᴜɴᴛꜱ :</b></u>
 
-# 🧟 ZOMBIE ACCOUNTS
-HELP_25 = """ 🧟 <b>ZOMBIE ACCOUNTS</b> 💀
+➥ /zombies ➻ ʙᴀɴ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛꜱ
+"""
 
-• /zombies - Ban Deleted Accounts 🚫 """
+HELP_26 = """
+<b><u>ᴜꜱᴇʀ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ :</b></u>
 
-# 👤 USER INFORMATION
-HELP_26 = """ 👤 <b>USER INFORMATION</b> 📊
+➥ /info ➻ ɢᴇᴛ ᴜꜱᴇʀ ɪɴꜰᴏ
+➥ /userinfo ➻ ꜱᴀᴍᴇ ᴀꜱ /info
+"""
 
-• /info [user_id]: Get detailed information about a user 🔍
-• /userinfo [user_id]: Alias for /info 👥 """
+HELP_27 = """
+<b><u>ɢɪᴛʜᴜʙ ʀᴇᴘᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ :</b></u>
 
-# 📁 GITHUB REPOSITORY DOWNLOADER
-HELP_27 = """ 📁 <b>GITHUB REPOSITORY DOWNLOADER</b> 🐙
+➥ /downloadrepo ➻ ᴅᴏᴡɴʟᴏᴀᴅ ᴀ ɢɪᴛʜᴜʙ ʀᴇᴘᴏ
 
-<b>Commands Help:</b> 💻
-1. /downloadrepo 📥
+➥ ᴜꜱᴀɢᴇ ➻ /downloadrepo [ʀᴇᴘᴏ ᴜʀʟ]  
+➥ ꜰᴇᴀᴛᴜʀᴇꜱ ➻ ᴄʟᴏɴᴇ, ᴢɪᴘ ᴀɴᴅ ꜱᴇɴᴅ ꜰɪʟᴇ
+"""
 
-<b>Description:</b> Download and retrieve files from a GitHub repository 🗂️
-<b>Usage:</b> /downloadrepo [Repo_URL] 🔗
-<b>Details:</b>
-• Clones the specified GitHub repository 📋
-• Creates a zip file of the repository 📦
-• Sends the zip file back as a document 📄
-• If the download fails, an error message will be displayed ⚠️
+HELP_28 = """
+<b><u>ᴛʀᴜᴛʜ ᴏʀ ᴅᴀʀᴇ :</b></u>
 
-<b>Examples:</b>
-• /downloadrepo https://github.com/username/repository 🌟 """
+➥ /truth ➻ ɢᴇᴛ ᴀ ᴛʀᴜᴛʜ ǫᴜᴇꜱᴛɪᴏɴ  
+➥ /dare ➻ ɢᴇᴛ ᴀ ᴅᴀʀᴇ ᴄʜᴀʟʟᴇɴɢᴇ  
 
-# 🎲 TRUTH OR DARE BOT COMMANDS
-HELP_28 = """ 🎲 <b>TRUTH OR DARE BOT COMMANDS</b> 🎯
+➥ ɴᴏᴛᴇ ➻ ɪꜱꜱᴜᴇ ᴀᴀʏᴇ ᴛᴏ ᴅᴏʙᴀʀᴀ ᴛʀʏ ᴋᴀʀᴏ
+"""
 
-Use these commands to play truth or dare: 🎮
-• /truth: Get a random truth question. Answer honestly! 💭
-• /dare: Get a random dare challenge. Complete it if you dare! 🔥
+HELP_29 = """
+<b><u>ᴍᴏɴɢᴏᴅʙ ᴄʜᴇᴄᴋᴇʀ :</b></u>
 
-<b>Examples:</b>
-• /truth: "What is your most embarrassing moment?" 😅
-• /dare: "Do 10 push-ups." 💪
+➥ /mongochk ➻ ᴄʜᴇᴄᴋ ᴍᴏɴɢᴏᴅʙ ᴜʀʟ ᴀɴᴅ ᴄᴏɴɴᴇᴄᴛɪᴏɴ
+"""
 
-<b>Note:</b> If you encounter any issues with fetching questions, please try again later ⏰ """
+HELP_30 = """
+<b><u>ꜰᴏɴᴛ ᴄᴏɴᴠᴇʀᴛᴇʀ :</b></u>
 
-# 🍃 MONGODB CHECKER
-HELP_29 = """ 🍃 <b>MONGODB CHECKER</b> 🔍
+➥ /font ➻ ᴄᴏɴᴠᴇʀᴛ ᴛᴇxᴛ ɪɴᴛᴏ ꜱᴛʏʟɪꜱʜ ꜰᴏɴᴛ
+"""
 
-• /mongochk [mongo_url]: Checks the validity of a MongoDB URL and connection to the MongoDB instance 🗄️ """
+HELP_31 = """
+<b><u>ɢᴀʟɪ ᴄᴏᴍᴍᴀɴᴅꜱ :</b></u>
 
-# 🔤 FONT CONVERTER
-HELP_30 = """ 🔤 <b>FONT CONVERTER</b> ✨
+➥ /gali ➻ ᴄʜᴀᴛ ʀᴀɴᴅᴏᴍ ɢᴀʟɪ ꜱᴇɴᴅ ᴋᴀʀᴇ (ᴅᴍ ᴏɴʟʏ)
+➥ .gali ➻ ᴀʟᴛᴇʀɴᴀᴛᴇ ᴄᴏᴍᴍᴀɴᴅ ꜰᴏʀᴍᴀᴛ 💢
+"""
 
-• /font [text] - Converts simple text to beautiful text by changing its font 🎨 """
+HELP_32 = """
+<b><u>ʙᴏᴛ ʟɪꜱᴛ :</b></u>
+
+➥ /bots ➻ ɢʀᴏᴜᴘ ᴍᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ʙᴏᴛꜱ ʟɪꜱᴛ ꜱʜᴏᴡ ᴋᴀʀᴇ
+"""
+
+HELP_33 = """
+<b><u>ᴍᴀʀᴋᴅᴏᴡɴ ʜᴇʟᴘ :</b></u>
+
+➥ /markdownhelp ➻ ᴍᴀʀᴋᴅᴏᴡɴ ꜰᴏʀᴍᴀᴛɪɴɢ ʜᴇʟᴘ ꜱʜᴏᴡ ᴋᴀʀᴇ
+"""
+
+HELP_34 = """
+<b><u>ᴡɪꜱʜ ᴛᴀɢ ʜᴇʟᴘ :</b></u>
+
+🌅 ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ
+➥ /gmtag ➻ ɢᴍ ᴛᴀɢɢɪɴɢ ꜱᴛᴀʀᴛ
+➥ /gmstop ➻ ɢᴍ ᴛᴀɢɢɪɴɢ ꜱᴛᴏᴘ
+
+🌞 ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ
+➥ /gatag ➻ ɢᴀ ᴛᴀɢɢɪɴɢ ꜱᴛᴀʀᴛ
+➥ /gastop ➻ ɢᴀ ᴛᴀɢɢɪɴɢ ꜱᴛᴏᴘ
+
+🌙 ɢᴏᴏᴅ ɴɪɢʜᴛ
+➥ /gntag ➻ ɢɴ ᴛᴀɢɢɪɴɢ ꜱᴛᴀʀᴛ
+➥ /gnstop ➻ ɢɴ ᴛᴀɢɢɪɴɢ ꜱᴛᴏᴘ
+
+⚙️ ᴜᴛɪʟɪᴛʏ
+➥ /stopall ➻ ᴀʟʟ ᴛᴀɢɢɪɴɢ ꜱᴛᴏᴘ
+➥ /taghelp ➻ ʜᴇʟᴘ ᴍᴇɴᴜ
+"""
+
+HELP_35 = """
+<b><u>ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇ :</b></u>
+
+➥ /welcome on/off ➻ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏɢɢʟᴇ
+➥ /awelcome on/off ➻ ᴀꜱꜱɪꜱᴛᴀɴᴛ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏɢɢʟᴇ
+"""
+
+HELP_36 = """
+<b><u>ᴄᴏᴜᴘʟᴇ ᴏғ ᴛʜᴇ ᴅᴀʏ :</b></u>
+
+➥ /couple ➻ ʀᴀɴᴅᴏᴍ ᴄᴏᴜᴘʟᴇ ꜱᴇʟᴇᴄᴛ ᴋᴀʀᴇ ❤️
+➥ /couples ➻ ꜱᴀᴍᴇ ᴀꜱ /couple 💏
+
+📸 ᴅᴘ ᴄᴏᴍʙɪɴᴇᴅ ɪᴍᴀɢᴇ ᴀᴜᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ʜᴏɢᴀ
+"""
+
+HELP_37 = """
+<b><u>ʀᴛᴍᴘꜱ ꜱᴛʀᴇᴀᴍ :</b></u>
+
+➥ ʀᴛᴍᴘꜱ ꜱᴛʀᴇᴀᴍɪɴɢ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ʙᴏᴛꜱ
+
+• @ShrutixMusicbot
+• @M4_Music_BoT
+"""
+
+HELP_38 = """
+<b><u>ʟᴏᴠᴇ ʙɪʀᴅꜱ ᴛᴏᴏʟꜱ :</b></u>
+
+🎁 ɢɪғᴛꜱ
+➥ /gifts ➻ ᴀʟʟ ɢɪғᴛꜱ
+➥ /sendgift ➻ ɢɪғᴛ ꜱᴇɴᴅ ᴋᴀʀᴇ
+➥ /mygifts ➻ ʏᴏᴜʀ ɢɪғᴛꜱ
+
+💰 ᴄᴏɪɴꜱ
+➥ /balance ➻ ʙᴀʟᴀɴᴄᴇ ᴄʜᴇᴄᴋ
+
+📖 ꜱᴛᴏʀʏ
+➥ /story ➻ ʀᴏᴍᴀɴᴛɪᴄ ꜱᴛᴏʀʏ ɢᴇɴ
+
+🏆 ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ
+➥ /top ➻ ʀɪᴄʜ ᴜꜱᴇʀꜱ
+"""
+
+HELP_39 = """
+<b><u>ᴠᴄ ʟᴏɢɢᴇʀ :</b></u>
+
+➥ /vclogger ➻ ꜱᴛᴀᴛᴜꜱ
+➥ /vclogger on ➻ ᴇɴᴀʙʟᴇ
+➥ /vclogger off ➻ ᴅɪꜱᴀʙʟᴇ
+"""
 
 # 🤬 GALI COMMANDS
-HELP_31 = """ 🤬 <b>GALI COMMANDS</b> 😤
+HELP_39 = """
+<b><u>ᴠᴄ ʟᴏɢɢᴇʀ :</b></u>
 
-<b>Commands:</b>
-• /gali - Send random gali (works in DM) 💢
-• .gali - Alternative command format 🔥 """
+➥ /vclogger ➻ ᴄʜᴇᴄᴋ ᴠᴄ ʟᴏɢɢᴇʀ ꜱᴛᴀᴛᴜꜱ
+➥ /vclogger on ➻ ᴇɴᴀʙʟᴇ ᴠᴄ ʟᴏɢɢɪɴɢ
+➥ /vclogger off ➻ ᴅɪꜱᴀʙʟᴇ ᴠᴄ ʟᴏɢɢɪɴɢ
 
-# 🤖 BOT LIST
-HELP_32 = """ 🤖 <b>BOT LIST</b> 🎯
+➥ /vclogger enable ➻ ᴛᴜʀɴ ᴏɴ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ
+➥ /vclogger disable ➻ ᴛᴜʀɴ ᴏꜰꜰ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ
+➥ /vclogger yes/no ➻ ǫᴜɪᴄᴋ ᴛᴏɢɢʟᴇ
 
-• /bots - Get a list of bots in the group 📋 """
+✨ <b>ғᴇᴀᴛᴜʀᴇꜱ :</b>
+➥ ʀᴇᴀʟ-ᴛɪᴍᴇ ᴊᴏɪɴ/ʟᴇᴀᴠᴇ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ 🎵
+➥ ᴀᴜᴛᴏ-ᴅᴇʟᴇᴛᴇ ᴍᴇꜱꜱᴀɢᴇꜱ (10 ꜱᴇᴄ) ⏱️
+➥ ʀᴀɴᴅᴏᴍ ᴡᴇʟᴄᴏᴍᴇ/ɢᴏᴏᴅʙʏᴇ 💬
+➥ ᴘᴇʀꜱɪꜱᴛᴇɴᴛ ꜱᴇᴛᴛɪɴɢꜱ 💾
 
-# 📝 MARKDOWN HELP
-HELP_33 = """ 📝 <b>MARKDOWN HELP</b> 📖
-
-• /markdownhelp - Help about Markdown 🔧 """
-
-# 🏷️ WISH TAG HELP
-HELP_34 = """ 🏷️ <b>WISH TAG HELP</b> 🌟
-
-<b>Good Morning:</b> 🌅
-• /gmtag - Start Good Morning tagging ☀️
-• /gmstop - Stop Good Morning tagging 🛑
-
-<b>Good Afternoon:</b> 🌞
-• /gatag - Start Good Afternoon tagging 🌤️
-• /gastop - Stop Good Afternoon tagging 🛑
-
-<b>Good Night:</b> 🌙
-• /gntag - Start Good Night tagging 🌜
-• /gnstop - Stop Good Night tagging 🛑
-
-<b>Utility:</b> ⚙️
-• /stopall - Stop all active tagging 🚫
-• /taghelp - Show this help message 📖
-
-<b>Note:</b> Only one tagging session can run per chat at a time 📌 """
-
-HELP_35 = """ <b>Welcome Message</b>
-• /welcome on/off: Enable or Disable welcome message .
-• /awelcome on/off: Enable or Disable Assistant welcome message ."""
-
-HELP_36 = """ 💑 <b>COUPLE OF THE DAY</b> 💖
-
-• /couple - Selects two random members in the group as today's couple ❤️  
-• /couples - Same as /couple, shows today's selected couple 💏
-
-📸 Beautiful framed photo with both DPs will be generated 🖼️  
-📅 Next couple will be selected automatically tomorrow ⏳ """
-
-HELP_37 = """🤖 <b>ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴛʜᴇsᴇ ʙᴏᴛs</b> 🤖
-
-🔹 <b>ғᴜɴᴄᴛɪᴏɴ:</b>  
-• <b>ʀᴛᴍᴘs sᴛʀᴇᴀᴍɪɴɢ</b> 🎥
-
-🔹 <b>ᴛʜɪs ғᴜɴᴄᴛɪᴏɴ ɪs sᴜᴘᴘᴏʀᴛᴇᴅ ɪɴ:</b>  
-
-• @ShrutixMusicbot – <b>Sʜʀᴜᴛɪ Mᴜsɪᴄ Bᴏᴛ</b>  
-• @M4_Music_BoT – <b>M4 Mᴜsɪᴄ Bᴏᴛ</b>  
-
-✨ <b>ᴜsᴇ ᴛʜᴇsᴇ ʙᴏᴛs ᴛᴏ ᴇɴᴊᴏʏ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ғᴜʟʟʏ.</b>"""
-
-HELP_38 = """💝 <b>LOVE BIRDS TOOLS</b> 🕊️
-
-🎁 <b>Virtual Gifts:</b>  
-• /gifts - <b>ꜱʜᴏᴡ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ɢɪꜰᴛꜱ</b> 🎀  
-• /sendgift @user 🌹 - <b>ꜱᴇɴᴅ ᴀ ɢɪꜰᴛ ᴛᴏ ꜱᴏᴍᴇᴏɴᴇ</b> 💌  
-• /mygifts - <b>ᴠɪᴇᴡ ʏᴏᴜʀ ʀᴇᴄᴇɪᴠᴇᴅ ɢɪꜰᴛꜱ</b> 📥  
-
-💰 <b>Balance & Coins:</b>  
-• /balance (or /bal) - <b>ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴏɪɴꜱ, ɢɪꜰᴛꜱ ꜱᴇɴᴛ & ʀᴇᴄᴇɪᴠᴇᴅ</b> 💸  
-• (auto) - <b>ᴇᴀʀɴ ᴄᴏɪɴꜱ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ʙʏ ᴄʜᴀᴛᴛɪɴɢ & ᴄʟᴀɪᴍɪɴɢ ɢɪꜰᴛꜱ</b> ✨  
-
-📖 <b>Love Stories:</b>  
-• /story Name1 Name2 - <b>ɢᴇɴᴇʀᴀᴛᴇ ᴀ ʀᴀɴᴅᴏᴍ ʀᴏᴍᴀɴᴛɪᴄ ꜱᴛᴏʀʏ</b> 💞  
-
-🏆 <b>Leaderboard:</b>  
-• /top (or /leaderboard) - <b>ꜱʜᴏᴡ ʀɪᴄʜᴇꜱᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴍᴏꜱᴛ ᴄᴏɪɴꜱ</b> 🏅  
-
-💡 <b>Tips:</b>  
-- <b>ꜱᴇɴᴅ ᴍᴇꜱꜱᴀɢᴇꜱ ᴛᴏ ᴇᴀʀɴ ᴄᴏɪɴꜱ</b> 📩  
-- <b>ᴄʟᴀɪᴍ ᴘᴇɴᴅɪɴɢ ɢɪꜰᴛꜱ ᴡʜᴇɴ ʏᴏᴜ ᴄʜᴀᴛ</b> 🎁  
-- <b>ꜱᴘʀᴇᴀᴅ ʟᴏᴠᴇ & ᴄʟɪᴍʙ ᴛʜᴇ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ</b> ❤️
-"""
-
-HELP_39 = """🎤 <b>VC LOGGER</b> 📢
-
-🔔 <b>Voice Chat Notifications:</b>  
-- /vclogger - <b>ᴄʜᴇᴄᴋ ᴠᴄ ʟᴏɢɢᴇʀ ꜱᴛᴀᴛᴜꜱ</b> 📊  
-- /vclogger on - <b>ᴇɴᴀʙʟᴇ ᴠᴄ ʟᴏɢɢɪɴɢ</b> ✅  
-- /vclogger off - <b>ᴅɪꜱᴀʙʟᴇ ᴠᴄ ʟᴏɢɢɪɴɢ</b> 🚫  
-
-📝 <b>Alternative Commands:</b>  
-- /vclogger enable - <b>ᴛᴜʀɴ ᴏɴ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ</b> 🔊  
-- /vclogger disable - <b>ᴛᴜʀɴ ᴏꜰꜰ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ</b> 🔇  
-- /vclogger yes/no - <b>ǫᴜɪᴄᴋ ᴛᴏɢɢʟᴇ</b> ⚡  
-
-✨ <b>Features:</b>  
-- <b>ʀᴇᴀʟ-ᴛɪᴍᴇ ᴊᴏɪɴ/ʟᴇᴀᴠᴇ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ</b> 🎵  
-- <b>ᴀᴜᴛᴏ-ᴅᴇʟᴇᴛᴇ ᴍᴇꜱꜱᴀɢᴇꜱ (10 ꜱᴇᴄ)</b> ⏱️  
-- <b>ʀᴀɴᴅᴏᴍ ᴡᴇʟᴄᴏᴍᴇ/ɢᴏᴏᴅʙʏᴇ ᴍᴇꜱꜱᴀɢᴇꜱ</b> 💬  
-- <b>ᴘᴇʀꜱɪꜱᴛᴇɴᴛ ꜱᴇᴛᴛɪɴɢꜱ (ꜱᴀᴠᴇᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ)</b> 💾  
-
-💡 <b>Tips:</b>  
-- <b>ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴛᴏɢɢʟᴇ ᴛʜɪꜱ ꜰᴇᴀᴛᴜʀᴇ</b> 👑  
-- <b>ᴋᴇᴇᴘꜱ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʟɪᴠᴇʟʏ & ɪɴꜰᴏʀᴍᴇᴅ</b> 🎉  
-- <b>ᴡᴏʀᴋꜱ ᴡɪᴛʜ ᴀʟʟ ᴘʀᴇꜰɪxᴇꜱ (., !, /, @, ?, ')</b> 🔧
+💡 <b>ɴᴏᴛᴇ :</b>
+➥ ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴛᴏɢɢʟᴇ ᴛʜɪꜱ
+➥ ᴋᴇᴇᴘꜱ ɢʀᴏᴜᴘ ᴀᴄᴛɪᴠᴇ & ᴍᴏᴅᴇʀɴ
 """
 
 # ©️ Copyright Reserved - @NoxxOP  Nand Yaduwanshi
