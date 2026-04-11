@@ -1,26 +1,4 @@
-# Copyright (c) 2025 Nand Yaduwanshi <NoxxOP>
-# Location: Supaul, Bihar
-#
-# All rights reserved.
-#
-# This code is the intellectual property of Nand Yaduwanshi.
-# You are not allowed to copy, modify, redistribute, or use this
-# code for commercial or personal projects without explicit permission.
-#
-# Allowed:
-# - Forking for personal learning
-# - Submitting improvements via pull requests
-#
-# Not Allowed:
-# - Claiming this code as your own
-# - Re-uploading without credit or permission
-# - Selling or using commercially
-#
-# Contact for permissions:
-# Email: badboy809075@gmail.com
-#
-# ATLEAST GIVE CREDITS IF YOU STEALING :
-# ELSE NO FURTHER PUBLIC THUMBNAIL UPDATES
+
 
 import os
 import re
@@ -31,20 +9,21 @@ from py_yt import VideosSearch
 from config import YOUTUBE_IMG_URL as FAILED
 
 # ── Canvas ───────────────────────────────────────────────────────────────────
-CANVAS_W, CANVAS_H = 1280, 720
+CANVAS_W, CANVAS_H = 1280, 800
 
 # ── Frosted glass panel ───────────────────────────────────────────────────────
-PANEL_W, PANEL_H = 780, 560
-PANEL_X          = (CANVAS_W - PANEL_W) // 2    # 250
-PANEL_Y          = (CANVAS_H - PANEL_H) // 2    # 80
-PANEL_RADIUS     = 38
-PANEL_ALPHA      = 195   # 0-255  (higher = more opaque white)
+PANEL_W, PANEL_H = 900, 670
+PANEL_X          = (CANVAS_W - PANEL_W) // 2    # 190
+PANEL_Y          = (CANVAS_H - PANEL_H) // 2    # 65
+PANEL_RADIUS     = 40
+PANEL_ALPHA      = 200
+# 0-255  (higher = more opaque white)
 
 # ── Song thumbnail inside panel ───────────────────────────────────────────────
-THUMB_W, THUMB_H = 700, 300
+THUMB_W, THUMB_H = 848, 477
 THUMB_X          = PANEL_X + (PANEL_W - THUMB_W) // 2
-THUMB_Y          = PANEL_Y + 30
-THUMB_RADIUS     = 22
+THUMB_Y          = PANEL_Y + 26
+THUMB_RADIUS     = 18
 
 # ── Text ─────────────────────────────────────────────────────────────────────
 TEXT_LEFT = PANEL_X + 40
@@ -65,7 +44,7 @@ ICONS_X = PANEL_X + (PANEL_W - ICONS_W) // 2
 ICONS_Y = BAR_Y + 52
 
 # ── Branding ──────────────────────────────────────────────────────────────────
-BRAND_TEXT      = "Kelly Music 🎶"
+BRAND_TEXT      = "Kelly Music"
 BRAND_FONT_SIZE = 30
 
 # ── Cache ─────────────────────────────────────────────────────────────────────
