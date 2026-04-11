@@ -72,7 +72,7 @@ START_IMAGES = [
 # ─────────────────────────────────────────────
 
 async def _do_intro(client, message: Message):
-        """React → sticker (delete)."""
+    """React → sticker (delete)."""
 
     # 1. React on the incoming message
     try:
