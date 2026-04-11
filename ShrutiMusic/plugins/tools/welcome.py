@@ -119,15 +119,15 @@ async def greet_group(_, member: ChatMemberUpdated):
         temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
             member.chat.id,
             photo=welcomeimg,
-            caption=f"""🌟 <b>ᴡᴇʟᴄᴏᴍᴇ {user.mention}!</b>
-
-📋 <b>ɢʀᴏᴜᴘ:</b> {member.chat.title}
-🆔 <b>ʏᴏᴜʀ ɪᴅ:</b> <code>{user.id}</code>
-👤 <b>ᴜsᴇʀɴᴀᴍᴇ:</b> @{user.username if user.username else "ɴᴏᴛ sᴇᴛ"}
-
-<b><u>ʜᴏᴘᴇ ʏᴏᴜ ғɪɴᴅ ɢᴏᴏᴅ ᴠɪʙᴇs, ɴᴇᴡ ғʀɪᴇɴᴅs, ᴀɴᴅ ʟᴏᴛs ᴏғ ғᴜɴ ʜᴇʀᴇ!</u> 🌟</b>""",
+            caption=f"""<blockquote><b>✬ 𝐖ᴇʟᴄσᴍᴇ {user.mention} ɪɴ σᴜʀ ɢʀσᴜᴘ 💐</b>
+</blockquote><blockquote><b>✬ 𝐆ʀσᴜᴘ » {member.chat.title}
+✬ 𝐔sᴇʀ ɪᴅ » {user.id}
+✬ 𝐔sᴇʀɴɑᴍᴇ » @{user.username if user.username else "ɴᴏᴛ sᴇᴛ"}</b>
+</blockquote><blockquote><b><u>❖ 𝐇σᴘᴇ ʏσᴜ ғɪɴᴅ ɢσσᴅ ᴠɪʙᴇs, ɴᴇᴡ ғʀɪᴇɴᴅs, ᴧɴᴅ ʟσᴛs σғ ғᴜɴ ʜᴇʀᴇ ! 💞</u></b>
+</blockquote>
+""",
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("🎵 ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🎵", url=f"https://t.me/{app.username}?startgroup=True")]
+                [InlineKeyboardButton("✙ 𝐀ᴅᴅ 𝐌є 𝐈η 𝐘συʀ 𝐆ʀσυᴘ ✙", url=f"https://t.me/{app.username}?startgroup=True")]
             ]),
         )
 
