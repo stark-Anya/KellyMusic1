@@ -109,7 +109,6 @@ async def start_pm(client, message: Message, _):
                     photo=random.choice(START_IMAGES),
                     caption=_["help_1"].format(config.SUPPORT_GROUP),
                     reply_markup=keyboard,
-                    message_effect_id=5159385139981059251,
                 )
             except Exception:
                 return await message.reply_photo(
@@ -161,7 +160,6 @@ async def start_pm(client, message: Message, _):
                     photo=thumbnail,
                     caption=searched_text,
                     reply_markup=key,
-                    message_effect_id=5159385139981059251,
                 )
             except Exception:
                 await app.send_photo(
@@ -192,8 +190,6 @@ async def start_pm(client, message: Message, _):
                         message.from_user.mention, app.mention, UP, DISK, CPU, RAM
                     ),
                     reply_markup=InlineKeyboardMarkup(out),
-                    message_effect_id=5159385139981059251,
-                    has_spoiler=True,
                 )
             except Exception:
                 await message.reply_photo(
@@ -202,7 +198,6 @@ async def start_pm(client, message: Message, _):
                         message.from_user.mention, app.mention, UP, DISK, CPU, RAM
                     ),
                     reply_markup=InlineKeyboardMarkup(out),
-                    has_spoiler=True,
                 )
             if await is_on_off(2):
                 return await app.send_message(
@@ -224,7 +219,6 @@ async def start_pm(client, message: Message, _):
                     message.from_user.mention, app.mention, UP, DISK, CPU, RAM
                 ),
                 reply_markup=InlineKeyboardMarkup(out),
-                message_effect_id=5159385139981059251,
             )
         except Exception:
             await message.reply_photo(
@@ -259,7 +253,6 @@ async def start_gp(client, message: Message, _):
             photo=random.choice(START_IMAGES),
             caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
             reply_markup=InlineKeyboardMarkup(out),
-            message_effect_id=5159385139981059251,
         )
     except Exception:
         await message.reply_photo(
@@ -314,7 +307,6 @@ async def welcome(client, message: Message):
                             app.mention,
                         ),
                         reply_markup=InlineKeyboardMarkup(out),
-                        message_effect_id=5159385139981059251,
                     )
                 except Exception:
                     await message.reply_photo(
