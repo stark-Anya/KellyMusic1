@@ -124,7 +124,7 @@ async def greet_group(_, member: ChatMemberUpdated):
 ✬ 𝐔sᴇʀ ɪᴅ » {user.id}
 ✬ 𝐔sᴇʀɴɑᴍᴇ » @{user.username if user.username else "ɴᴏᴛ sᴇᴛ"}</b>
 </blockquote><blockquote><b><u>❖ 𝐇σᴘᴇ ʏσᴜ ғɪɴᴅ ɢσσᴅ ᴠɪʙᴇs, ɴᴇᴡ ғʀɪᴇɴᴅs, ᴧɴᴅ ʟσᴛs σғ ғᴜɴ ʜᴇʀᴇ ! 💞</u></b>
-</blockquote>
+</blockquote><blockquote><b>❖ 𝐌ᴧᴅє ʙʏ » <a href="https://t.me/Anya_Bots">˹𝐀ɴʏᴀ ꭙ 𝐁ᴏᴛs˼</a></b></blockquote>
 """,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("✙ 𝐀ᴅᴅ 𝐌є 𝐈η 𝐘συʀ 𝐆ʀσυᴘ ✙", url=f"https://t.me/{app.username}?startgroup=True")]
