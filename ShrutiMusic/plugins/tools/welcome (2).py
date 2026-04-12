@@ -52,7 +52,7 @@ def welcomepic(pic, user, chat, id, uname):
     # Profile Picture → Right side golden circle
     # Circle center: ~(1932, 802), ring inner radius ~340px
     # ────────────────────────────────────────────────────────────────────────
-    pfp_size = 680                          # golden ring ke andar fit
+    pfp_size = 870                          # golden ring ke andar fit
     try:
         pfp = Image.open(pic).convert("RGBA")
     except Exception:
@@ -60,8 +60,8 @@ def welcomepic(pic, user, chat, id, uname):
 
     pfp = circle(pfp, size=(pfp_size, pfp_size))
 
-    cx    = 1932                            # ← circle center X (left/right)
-    cy    = 802                             # ← circle center Y (upar/neeche)
+    cx    = 2025                           # ← circle center X (left/right)
+    cy    = 1025                           # ← circle center Y (upar/neeche)
     pfp_x = cx - pfp_size // 2             # 1592
     pfp_y = cy - pfp_size // 2             # 462
     background.paste(pfp, (pfp_x, pfp_y), pfp)
@@ -80,7 +80,7 @@ def welcomepic(pic, user, chat, id, uname):
     # 3 lines ko box ke center mein vertically center karo
     line_gap     = 130                      # ← lines ke beech gap
     total_h      = line_gap * 2
-    text_x       = 230                      # ← box ke andar left margin
+    text_x       = 260                      # ← box ke andar left margin
     text_start_y = 727                      # ← (box_center_y - total_h // 2)
 
     uname_str  = f"@{uname}" if uname else "Not Set"
@@ -88,19 +88,19 @@ def welcomepic(pic, user, chat, id, uname):
 
     draw.text(
         (text_x, text_start_y),
-        f"✦ Name  :  {name_clean}",
+        f"Name  :  {name_clean}",
         fill="white",
         font=font,
     )
     draw.text(
         (text_x, text_start_y + line_gap),
-        f"✦ ID       :  {id}",
+        f"ID       :  {id}",
         fill="white",
         font=font,
     )
     draw.text(
         (text_x, text_start_y + line_gap * 2),
-        f"✦ User   :  {uname_str}",
+        f"User   :  {uname_str}",
         fill="white",
         font=font,
     )
