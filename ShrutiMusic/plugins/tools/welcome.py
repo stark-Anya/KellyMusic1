@@ -81,19 +81,19 @@ def welcomepic(pic, user, chat, id, uname):
 
     draw.text(
         (text_x, text_start_y),
-        f"✦ Name  :  {name_clean}",
+        f"Name  :  {name_clean}",
         fill="white",
         font=font,
     )
     draw.text(
         (text_x, text_start_y + line_gap),
-        f"✦ ID      :  {id}",
+        f"ID      :  {id}",
         fill="white",
         font=font,
     )
     draw.text(
         (text_x, text_start_y + line_gap * 2),
-        f"✦ User  :  {uname_str}",
+        f"User  :  {uname_str}",
         fill="white",
         font=font,
     )
