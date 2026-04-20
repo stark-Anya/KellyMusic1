@@ -27,9 +27,10 @@ import git
 from pyrogram import filters
 
 from ShrutiMusic import app
+from ShrutiMusic.misc import SUDOERS
 
-
-@app.on_message(filters.command(["downloadrepo"]))
+# Naya (sirf tu use kar sakta hai):
+@app.on_message(filters.command(["downloadrepo"]) & SUDOERS)
 def download_repo(_, message):
     if len(message.command) != 2:
         message.reply_text(
