@@ -42,7 +42,7 @@ ICONS_X = PANEL_X + (PANEL_W - ICONS_W) // 2
 ICONS_Y = BAR_Y + 36
 icons_path = "ShrutiMusic/assets/play_icons.png"
 # ── Branding ──────────────────────────────────────────────────────────────────
-BRAND_TEXT      = "[ Kelly Music ]"
+BRAND_TEXT      = "[ Midnight Music]"
 BRAND_FONT_SIZE = 32
 
 # ── Cache ─────────────────────────────────────────────────────────────────────
